@@ -1,0 +1,24 @@
+.main-container {
+    width: 100%;
+    max-width: $max-width;
+}
+
+.main-header {
+   display: flex; 
+   flex-wrap: wrap;
+   align-items: center;
+   
+   &-1 {
+       width: 100%;
+   }
+   &-2 {
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .contact-widget {
+       display: none;
+   }
+}

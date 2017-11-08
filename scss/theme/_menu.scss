@@ -1,5 +1,17 @@
 .main-nav {
     background: $primary-color;
+    @media screen and (max-width: 1024px) {
+        max-height: 0;
+        transition: max-height .3s;
+        &.show {
+            max-height: 10000px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 .main-menu {
     list-style: none;
@@ -7,6 +19,9 @@
     margin-top: 0;
     margin-bottom: 0;
     
+    @media screen and (min-width: 1024px) {
+        display: flex;
+    }
 
     &__item {
         border-bottom: 1px solid rgba($color: #fff, $alpha: .5)
@@ -21,12 +36,3 @@
     }
 }
 
-.social-networks {
-    padding-left: 1em;
-    a {
-        text-decoration: none;
-        color: #fff;
-        display: inline-block;
-        line-height: 3;
-    }
-}

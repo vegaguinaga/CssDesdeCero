@@ -14,7 +14,7 @@ $xs: $m * 0.7;
 // Variables de layout
 
 $gutter: 16px;
-$max-width: 1200px;
+$max-width: 1100px;
 
 @import "base/normalize";
 @import "layout/layout";
@@ -22,3 +22,4 @@ $max-width: 1200px;
 @import "modules/modules";
 @import "base/base";
 @import "theme/menu";
+@import "theme/banner";
